@@ -2,7 +2,7 @@
 
 const body = document.querySelector('body');
 let now = new Date();
-let day = now.getUTCDay() - 1;
+let day = now.getDay() - 1;
 let week = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"];
 
 for (let i = 0; i < week.length; i++) {
