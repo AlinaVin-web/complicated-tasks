@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#clock {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    background-image: url(./clock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#clock:after {
+    z-index: 3;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#arrow-hour {
+    z-index: 2;
+    width: 76px;
+    height: 267px;
+    top: 102px;
+    left: calc(50% - 38px);
+    transform-origin: 38px 198px;
+    position: absolute;
+    background-image: url(./arrowh.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#arrow-minute {
+    z-index: 1;
+    width: 36px;
+    height: 336px;
+    top: 40px;
+    left: calc(50% - 15px);
+    transform-origin: 15px 260px;
+    position: absolute;
+    background-image: url(./arrowm.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btns-container {
+    margin: 30px auto;
+    width: max-content;
+}
+
+.btn {
+    outline: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
